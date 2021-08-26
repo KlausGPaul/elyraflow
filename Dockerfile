@@ -1,7 +1,7 @@
 FROM elyra/kernel-py:2.5.1
 USER root
-##RUN apt-get update && apt-get --yes install apt-utils
-##RUN apt-get --yes install curl
+RUN apt-get update && apt-get --yes install apt-utils
+RUN apt-get --yes install curl
 ##RUN apt-get install -y --no-install-recommends freetds-bin krb5-user ldap-utils libffi6 libsasl2-2 libsasl2-modules libssl1.1 locales  lsb-release sasl2-bin sqlite3 unixodbc
 # set the user back to original setting
 USER $NB_UID
